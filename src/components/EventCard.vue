@@ -11,7 +11,7 @@
         </div>
         <v-list-item-title class="mb-1" style="font-size: 1.25rem !important;">{{ event.name }}</v-list-item-title>
         <v-card-subtitle style="padding: 0px !important; padding-bottom: 0px !important;">
-          <v-chip outlined class="mr-1 mb-1" 
+          <v-chip outlined class="mr-3 mb-1" 
             v-for="theme in event.themes"
             v-bind:key="theme"
             :text-color="colors[theme]"
@@ -21,7 +21,7 @@
         </v-card-subtitle>
         <v-divider></v-divider>
         <v-card-text style="padding: 0px !important;">
-          <div class="text-justify" style="color: #333333 !important; margin-top: 6px !important; font-size: 1rem !important;" v-html="event.overview">
+          <div class="text-justify" style="color: #333333 !important; margin-top: 6px !important; font-size: 0.9rem !important;" v-html="event.overview">
           </div>
           <div class="text--primary" style="color: #333333 !important;">
             <v-row>
