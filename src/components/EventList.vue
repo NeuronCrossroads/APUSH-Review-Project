@@ -10,15 +10,10 @@
 
 <script>
 import EventCard from "./EventCard.vue";
-import information from "../assets/information.json"
 
 export default {
+    props: ["events"],
     components: {EventCard},
-    data() {
-        return {
-            events: information.events
-        }
-    },
     methods: {
 
     }

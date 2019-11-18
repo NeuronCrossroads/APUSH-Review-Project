@@ -25,7 +25,7 @@
     </v-app-bar>
     <v-content>
       <v-container>
-        <EventList />
+        <EventList v-bind:events="information.events"/>
       </v-container>
     </v-content>
   </v-app>
@@ -33,6 +33,7 @@
 
 <script>
 import EventList from "./components/EventList.vue";
+import events_and_trends from "./assets/information.json";
 
 export default {
   name: "App",
@@ -41,8 +42,8 @@ export default {
     EventList
   },
 
-  data: () => ({
-    //
-  })
+  data() {
+    return {information: events_and_trends}
+  }
 };
 </script>
