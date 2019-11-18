@@ -25,20 +25,20 @@
     </v-app-bar>
     <v-content>
       <v-container>
-        <EventCard />
+        <EventList />
       </v-container>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import EventCard from "./components/EventCard.vue";
+import EventList from "./components/EventList.vue";
 
 export default {
   name: "App",
 
   components: {
-    EventCard
+    EventList
   },
 
   data: () => ({

@@ -1,11 +1,11 @@
-<trend name>
-<time ex: 1896 ex: 1543-1565 ex: 1860s>
-<overview paragraph form NO ENTERS>
+Rapid Industrialization
+1800-1850
+this was a fast industrialization
 
-<trend name>
-<time ex: 1896 ex: 1543-1565 ex: 1860s>
-<overview paragraph form NO ENTERS>
+Rapid Industrialization
+1800-1850
+this was a fast industrialization
 
-<trend name>
-<time ex: 1896 ex: 1543-1565 ex: 1860s>
-<overview paragraph form NO ENTERS>
+Rapid Industrialization
+1800,1821
+this is an industrialization

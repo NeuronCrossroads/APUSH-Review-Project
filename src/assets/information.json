@@ -1,0 +1,56 @@
+{"events":[{
+    "amsco": "145",
+    "causes": [
+        "abolitionist movement",
+        "seneca falls convention"
+    ],
+    "cfw": "4.1.3",
+    "coord": "na",
+    "effects": [
+        "civil war",
+        "emancipation proclamation"
+    ],
+    "name": "Publication of Uncle Tom's Cabin",
+    "overview": "This is an overview paragraph about an event that Vivek is \"supposed\" to write about",
+    "themes": [
+        "social",
+        "political"
+    ],
+    "time": "1852",
+    "time_sort": 1852
+},{
+    "amsco": "145",
+    "causes": [
+        "abolitionist movement",
+        "seneca falls convention"
+    ],
+    "cfw": "4.1.3",
+    "coord": "na",
+    "effects": [
+        "civil war",
+        "emancipation proclamation"
+    ],
+    "name": "Publication of Uncle Tom's Cabin",
+    "overview": "This is an <b style=\"color: purple;\">overview</b> paragraph about en <b style=\"color: purple;\">event that</b> Vivek is supposed to write about",
+    "themes": [
+        "social",
+        "political"
+    ],
+    "time": "1852",
+    "time_sort": 1852
+}],"trends":[{
+    "name": "Rapid Industrialization",
+    "overview": "this was a fast industrialization",
+    "time": "1800-1850",
+    "time_sort": 1825
+},{
+    "name": "Rapid Industrialization",
+    "overview": "this was a fast industrialization",
+    "time": "1800-1850",
+    "time_sort": 1825
+},{
+    "name": "Rapid Industrialization",
+    "overview": "this is an industrialization",
+    "time": "1800,1821",
+    "time_sort": 1800
+}]}
