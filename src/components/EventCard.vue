@@ -1,5 +1,6 @@
 <template>
-  <v-card max-width="450" style="margin-top: 10px !important;">
+  <div>
+  <v-card max-width="500" class="frosted">
     <v-list-item three-line>
       <v-list-item-content>
         <div class="overline mb-4" style="margin-bottom: 10px !important;">
@@ -51,6 +52,8 @@
       </v-list-item-content>
     </v-list-item>
   </v-card>
+  <v-divider class="ma-1"></v-divider>
+  </div>
 </template>
 
 <script>
@@ -69,3 +72,12 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.frosted {
+  background-color: rgba(255, 255, 255, 0.75) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  backdrop-filter: blur(10px) !important;
+  border-radius: 20px !important;
+}
+</style>

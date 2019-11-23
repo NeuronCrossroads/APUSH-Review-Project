@@ -23,9 +23,12 @@
 
       <v-spacer></v-spacer>
     </v-app-bar>
-    <v-content>
-      <v-container>
-        <EventList v-bind:events="information.events"/>
+    <v-content class="back">
+      <v-container style="max-width: calc(100vw - 15px) !important; padding: 0px !important;">
+        <v-row>
+          <v-spacer></v-spacer>
+          <EventList v-bind:events="information.events" />
+        </v-row>
       </v-container>
     </v-content>
   </v-app>
@@ -43,7 +46,15 @@ export default {
   },
 
   data() {
-    return {information: events_and_trends}
+    return { information: events_and_trends };
   }
 };
 </script>
+
+<style scoped>
+.back {
+  background-image: url("https://geology.com/world/usa-physical.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>

@@ -1,10 +1,12 @@
 <template>
-   <v-col sm="4">
+   <v-col sm="3">
+       <v-card class="pa-4 frosted mr-1" style="height: calc(100vh - 90px) !important; overflow: scroll !important;">
        <EventCard
        v-for="event in events"
        v-bind:event="event"
        v-bind:key="event.name"
        />
+       </v-card>
     </v-col>
 </template>
 
@@ -19,3 +21,12 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+.frosted {
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 20px !important;
+}
+</style>
