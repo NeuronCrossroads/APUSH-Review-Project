@@ -5,4 +5,5 @@ Vivek, there are a few guidelines you need to follow when doing this.
  - Dont put new lines INSIDE a part of an event
  - There should be an EXTRA SPACE between events
  - Use | only where specified by the template
+ - use {{bolded words}} to bold things
  - finish this semester's units by end of thanksgiving break
