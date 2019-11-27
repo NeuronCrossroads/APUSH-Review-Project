@@ -1,31 +1,11 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
-
-      <v-spacer></v-spacer>
-    </v-app-bar>
     <v-content class="back">
-      <v-container style="max-width: calc(100vw - 15px) !important; padding: 0px !important;">
+      <v-container
+        style="max-width: calc(100vw - 30px) !important; padding: 0px !important; padding-left: 15px;"
+      >
         <v-row>
+          <TrendList v-bind:trends="information.trends" />
           <v-spacer></v-spacer>
           <EventList v-bind:events="information.events" />
         </v-row>
@@ -36,25 +16,39 @@
 
 <script>
 import EventList from "./components/EventList.vue";
+import TrendList from "./components/TrendList.vue";
 import events_and_trends from "./assets/information.json";
+import "./Map.js";
 
 export default {
   name: "App",
 
   components: {
-    EventList
+    EventList,
+    TrendList
   },
 
   data() {
     return { information: events_and_trends };
   }
 };
+
 </script>
 
 <style scoped>
 .back {
-  background-image: url("https://geology.com/world/usa-physical.jpg");
-  background-attachment: fixed;
-  background-size: cover;
+  z-index: 1;
+}
+
+*::-webkit-scrollbar {
+  display: none !important;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
 }
 </style>
